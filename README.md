@@ -64,5 +64,153 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-bubblio-dev is a company surfaced via the API Evangelist harvest backlog (source: mcp-registry) and added to the network as a stub for full-pipeline profiling.
-- https://bubblio.dev/
+Bubblio provides an AI‑agent gateway that lets agents discover, negotiate, and pay for services on your platform with human‑approved consent. It includes a public directory, passkey‑based consent flow, exact‑once Stripe payments, tiered free and pro plans, and a machine‑readable llms.txt summary. The API hub is reachable at https://api.bubblio.dev/agent/hub/mcp, and the platform emphasizes transparent pricing and honest accounting.
+
+**Areas:** AI · Payments · Automation · Platform · Agents
+
+## bubblio-dev on APIs.io
+
+Everything profiled for bubblio-dev is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bubblio-dev/](https://apis.io/providers/bubblio-dev/)** — or go straight to one of the APIs or properties below.
+
+### APIs (6)
+
+- [bubblio-dev Agent Keys API](https://apis.io/apis/bubblio-dev/bubblio-dev-agent-keys-api/) — Managed agent keys — minted by the platform's server for its signed-in users.
+- [bubblio-dev Approvals API](https://apis.io/apis/bubblio-dev/bubblio-dev-approvals-api/) — The phone-first consent pages' API (bubblio.dev/a/{id} and /approvals).
+- [bubblio-dev Discovery API](https://apis.io/apis/bubblio-dev/bubblio-dev-discovery-api/) — Credential-free discovery — directory, manifests, llms.txt signposts.
+- [bubblio-dev MCP API](https://apis.io/apis/bubblio-dev/bubblio-dev-mcp-api/) — The MCP endpoints. Minimal, hand-rolled, STATELESS Streamable-HTTP servers: POST one JSON-RPC 2.0 message per request, receive one `application/json`…
+- [bubblio-dev Platform Push API](https://apis.io/apis/bubblio-dev/bubblio-dev-platform-push-api/) — Signed platform → Bubblio pushes (late results, payment-link settlements).
+- [bubblio-dev Platform Sync API](https://apis.io/apis/bubblio-dev/bubblio-dev-platform-sync-api/) — The code-declared action registry sync (shapes only, never policy).
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Bubblio Dev Webhooks](https://apis.io/asyncapis/bubblio-dev/bubblio-dev-webhooks/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Bubblio Dev Agentic Access](https://apis.io/agentic-access/bubblio-dev/bubblio-dev-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [AgentKeyInfo](https://apis.io/schemas/bubblio-dev/bubblio-dev-agent-key-info/)
+- [DoorId](https://apis.io/schemas/bubblio-dev/bubblio-dev-door-id/)
+- [JsonRpcRequest](https://apis.io/schemas/bubblio-dev/bubblio-dev-json-rpc-request/)
+- [JsonRpcResponse](https://apis.io/schemas/bubblio-dev/bubblio-dev-json-rpc-response/)
+- [PaymentSummary](https://apis.io/schemas/bubblio-dev/bubblio-dev-payment-summary/)
+- [QuoteId](https://apis.io/schemas/bubblio-dev/bubblio-dev-quote-id/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Bubblio Dev Context](https://apis.io/jsonld/bubblio-dev/bubblio-dev-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [bubblio-dev API Rules](https://apis.io/rules/bubblio-dev/bubblio-dev-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bubblio Dev Authentication](https://apis.io/security/bubblio-dev/bubblio-dev-authentication/)
+- [Bubblio Dev Domain Security](https://apis.io/security/bubblio-dev/bubblio-dev-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Bubblio Dev Scopes](https://apis.io/scopes/bubblio-dev/bubblio-dev-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Bubblio Dev Plans Pricing](https://apis.io/plans/bubblio-dev/bubblio-dev-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Bubblio Dev Rate Limits](https://apis.io/rate-limits/bubblio-dev/bubblio-dev-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://bubblio.dev/)
+- [Documentation](https://bubblio.dev/docs)
+- [Getting started](https://bubblio.dev/docs)
+- [API reference](https://bubblio.dev/docs/api)
+- [Sign up](https://bubblio.dev/signup)
+- [Changelog](https://bubblio.dev/docs/changelog)
+- [Blog](https://bubblio.dev/blog)
+- [Terms of service](https://bubblio.dev/terms)
+- [Privacy policy](https://bubblio.dev/privacy)
+- [Status](https://bubblio.dev/status)
+
+## API Evangelist rating
+
+**Kin Score 56.0** — strong · rubric 0.25.0 · scored 2026-10-29
+
+| Facet | Score |
+|---|---|
+| Discoverability | 65.0 |
+| Contract quality | 66.7 |
+| Contract governance | 79.1 |
+| Operational transparency | 39.5 |
+| Developer ergonomics | 49.3 |
+| Access clarity | 34.2 |
+
+**Agent readiness 44.0** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | verified |
+| Event Surface Described | unknown |
+| Agent Skills | unknown |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | — |
+| Operation Distinctiveness | mostly |
+
+**Regulatory alignment 29.2** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bubblio-dev/](https://apis.io/providers/bubblio-dev/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for bubblio-dev: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bubblio-dev/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
